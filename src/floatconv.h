@@ -47,10 +47,10 @@ extern inline double bytesToDouble(uint8_t num[8]) {
     return m * pow(2, exponent);
  }
 
-#define ADD(l, r) bytesToDouble(l) + bytesToDouble(r);
-#define SUB(l, r) bytesToDouble(l) - bytesToDouble(r);
-#define MUL(l, r) bytesToDouble(l) * bytesToDouble(r);
-#define DIV(l, r) bytesToDouble(l) / bytesToDouble(r);
-#define MOD(l, r) bytesToDouble(l) % bytesToDouble(r);
+#define ADDF(l, r) bytesToDouble(l) + bytesToDouble(r);
+#define SUBF(l, r) bytesToDouble(l) - bytesToDouble(r);
+#define MULF(l, r) bytesToDouble(l) * bytesToDouble(r);
+#define DIVF(l, r) bytesToDouble(l) / bytesToDouble(r);
+#define MODF(l, r) bytesToDouble(l) % bytesToDouble(r);
 
 #endif // __FLOAT_H__
